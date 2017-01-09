@@ -1,0 +1,222 @@
+/**********************
+* Filename:register-form-style.css
+* Create Date:2016/12/31
+* Author:Aqours-you
+**********************/
+
+/* コンテンツ全体 */
+/* コンテンツ全体 */
+body p {
+	background-color: #fff;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body, input, button {
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	font-size: 13px;
+	color: #3d464d;
+	font-weight: normal;
+}
+
+div.outer_frame {
+	width: 990px;
+	margin: 0 auto;
+}
+
+div#panBox {
+	height: 40px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+ul#breadcrumb {
+	padding: 10px 0 0 0;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	width: 600px;
+}
+
+ul#breadcrumb li {
+	float: left;
+	list-style: none;
+}
+
+div#page_content {
+	padding-bottom: 10em;
+	min-height: 425px;
+}
+
+div.register_form {
+	margin: auto;
+	width: 700px;
+}
+
+div.register_form_header {
+	margin: 0 auto 30px auto;
+	padding: 20px 0 20px 0;
+	border-bottom: #d8d8d8 1px solid;
+	width: 960px;
+	font-size: 26px;
+	font-weight: normal;
+}
+
+div.register_form_navi {
+	margin: 36px auto 40px;
+	width: 700px;
+	overflow: hidden;
+}
+
+ul.status li.cur {
+	background-image: url("../img/common/bg_status_cur.png");
+	font-weight: bold;
+}
+
+ul.status li:first-child {
+	margin-left: 0px;
+}
+
+ul.status li {
+	margin-left: 30px;
+	width: 200px;
+	float: left;
+	background: url("../img/common/bg_status.png") no-repeat left top;
+	line-height: 48px;
+	text-align: center;
+	text-indent: -20px;
+	list-style: none;
+}
+
+div#mainWrap {
+	margin: 0 auto;
+	width: 900px;
+}
+
+p.sam_red {
+	color:#db0700;
+	font-weight: bold;
+	margin-bottom: 15px !important;
+}
+
+span.required_description {
+	background: url("../img/common/bg_required.gif") top left no-repeat;
+	color: #fff;
+	font-size: 84%;
+	display: inline-block;
+	width: 35px;
+	font-weight: normal;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+
+table {
+	border-spacing: 0;
+	font-size: 100%;
+}
+
+table.table_basic {
+	border-collapse: collapse;
+	border: #c0c6ca 1px solid;
+	margin-bottom: 20px !important;
+}
+
+table.table_basic th {
+	border: #c0c6ca 1px solid;
+	background: #f0f4f8;
+	text-align: left;
+	padding: 10px;
+	font-weight: bold;
+}
+
+table.table_basic td {
+	border: #c0c6ca 1px solid;
+	padding: 10px;
+}
+
+span.required {
+	background: url("../img/common/bg_required.gif") top left no-repeat;
+	color: #fff;
+	font-size: 84%;
+	float: right;
+	display: inline-block;
+	width: 35px;
+	font-weight: normal;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+
+div.exsample {
+	margin-bottom: 5px;
+	color: #737373;
+}
+
+span.label_basic {
+	background-color: #999;
+	display: inline;
+	padding: 0.2em 0.6em 0.3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #FFF;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25em;
+	margin: 0px 7.5px 0px 15px;
+}
+
+span.label_description {
+	display: inline;
+	padding: 0.2em 0.6em 0.6em 0.0em;
+	font-size: 80%;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25em;
+	margin: 0px 7.5px 0px 15px;
+}
+
+span.label_item {
+	display: inline;
+	padding: 0.2em 0.6em 0.6em 0.0em;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25em;
+	margin: 0px 7.5px 0px 15px;
+}
+
+/* bootstrapの呼び出しクラスの編集 */
+div.form-group {
+	width: 270px;
+	padding: 0px 15px !important;
+	margin-bottom: 10px;
+}
+
+div.input-group {
+	padding: 0px 15px !important;
+}
+
+span.any {
+	background: url("../img/common/bg_any.gif") top left no-repeat;
+	color: #fff;
+	font-size: 84%;
+	float: right;
+	display: inline-block;
+	width: 35px;
+	font-weight: normal;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}

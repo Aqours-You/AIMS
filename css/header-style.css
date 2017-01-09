@@ -1,0 +1,42 @@
+/**********************
+* Filename:header-style.css
+* Create Date:2016/12/31
+* Author:Aqours-you
+**********************/
+
+/* ページヘッダー設定 */
+#page_header {
+	background: #fff;
+    	box-sizing: border-box;
+}
+
+#page_header.page_header_border {
+	height: 73px;
+	border-bottom: 2px solid #e5e5e5;
+	padding: 19px 0;
+	margin: 0 auto 30px;
+	background: #fff;
+	width:990px;
+	box-sizing: border-box;
+}
+
+#page_header #inner_page_header {
+	margin: auto;
+	width: 990px;
+}
+
+#page_header .home_icon_container #icon {
+	dispaly: inline-block;
+	vertical-align: middle;
+}
+
+#header_item {
+	float: right;
+	font-size: 13px;
+	margin-top: 8px;
+}
+
+.header_info_item {
+	float: left;
+	padding-left: 30px;
+}

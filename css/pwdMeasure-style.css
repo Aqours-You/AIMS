@@ -1,0 +1,41 @@
+/**********************
+* Filename:pwdMeasure-style.css
+* Create Date:2017/01/01
+* Author:Aqours-you
+* Offer:http://webdesign-dackel.com/2015/01/25/jquery-pwdmeasure/
+**********************/
+
+div#pm-indicator {
+  margin:10px 0;
+  padding:1.5em 1em;
+  color:#2c3e50;
+  font-size:12px;
+  text-align:center;
+  border:1px solid #ccc;
+  border-radius:2px;
+  background:#e4e4e4;
+  text-shadow:1px 1px 0 rgba(255,255,255,.8);
+  -webkit-transition:all .2s ease-in-out;
+          transition:all .2s ease-in-out;
+}
+
+div#pm-indicator.very-weak,
+.pm-indicator.not-match {
+  border-color:#be1d30;
+  background-color:#ffc3cf;
+}
+
+div#pm-indicator.weak {
+  border-color:#ff787d;
+  background-color:#ffe6e5;
+}
+
+div#pm-indicator.strong {
+  border-color:#78bc42;
+  background-color:#bceea6;
+}
+
+div#pm-indicator.very-strong {
+  border-color:#4f85a7;
+  background-color:#68c6d7;
+}

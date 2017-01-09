@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>勤怠管理システム-本登録(入力)-</title>
+    <link rel="stylesheet" href="./css/header-style.css">
+    <link rel="stylesheet" href="./css/footer-style.css">
+    <link rel="stylesheet" href="./css/register-form-style.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <!-- Bootstrap読み込み（スタイリングのため） -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/checkbox_checker.js"></script>
+    <script type="text/javascript" src="./js/datepicker.js"></script>
+    <!-- 日本語の読み込み -->
+    <script type="text/javascript" src="./js/lang/datepicker.ja.js"></script>
+  </head>
+  <body>
+    <!--　ページヘッダー -->
+    <div id="page_header" class="page_header_border">
+      <div id="inner_page_header">
+        <span class="home_icon_container">
+          <div id="icon">
+            <a href="./login.php"><img  width="36" src="./img/長波サマ.jpg"></a>
+          </span>
+          <div id="header_item">
+            <a class="header_info_item" href = "https://www.google.co.jp/">アプリのダウンロード</a>
+          </div>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <!-- パンくずリスト -->
+    <div id="panBox">
+      <ul id="breadcrumb">
+        <li class="first">
+          <a href=".">HOME</a>
+          <span>>></span>
+        </li>
+        <li class="last">サンプルフォーム</li>
+      </ul>
+    </div>
+
+    <!-- ページコンテンツ -->
+    <div class="outer_frame">
+      <div id="page_content">
+        <div tabindex="-1" id="main_skip" class="main_skip_destination"></div>
+          <div id="employee_info_register">
+            <div class="register_form_header">
+              <i class="glyphicon glyphicon-pencil"></i>&nbsp;従業員情報入力フォーム
+            </div>
+            <div class="register_form_navi">
+              <ul class="status">
+                <li class="cur">1.&nbsp;入力</li>
+                <li>2.&nbsp;確認</li>
+                <li>3.&nbsp;完了</li>
+              </ul>
+            </div>
+            <div id="mainWrap">
+              <p>
+                以下の入力フォームに必要事項をご入力の上、「確認ページへ」ボタンを押してください。
+              </p>
+              <p class="sam_red">
+                ※<span class="required_description">必須</span>項目は必ずご入力ください。
+              </p>
+              <form class="register_form" method="POST">
+                <table width="95%" cellspacing="0" cellpadding="0" class="table_basic">
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <span>従業員番号</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="exsample">
+                          <span class="label_basic">例</span>123457890
+                        </div>
+                        <div class="form-group">
+                          <input type="text"  class="form-control" name="employee_number" placeholder="従業員番号を入力してください。"/>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>お名前(漢字)</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">姓</span>
+                            <input type="text"  class="form-control" name="name_cc_first" placeholder="漢字を入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">名</span>
+                            <input type="text"  class="form-control" name="name_cc_last" placeholder="漢字を入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>お名前(カナ)</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">姓</span>
+                            <input type="text"  class="form-control" name="name_cc_first" placeholder="カナを入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">名</span>
+                            <input type="text"  class="form-control" name="name_cc_last" placeholder="カナを入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <th>
+                        <span>性別</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="form-group">
+                            <lavel class="checkbox-inline">
+                              <input class="authgroup" type="checkbox" id="male" name="sex[]" value="M">男性
+                            </lavel>
+                            <lavel class="checkbox-inline">
+                              <input class="authgroup" type="checkbox" id="female" name="sex[]" value="F">女性
+                            </lavel>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                      <th>
+                        <span>生年月日</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="exsample">
+                          <span class="label_basic">例</span>2017/01/01
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control datepicker-here" name="name_kana_first" placeholder="日付を入力してください。" data-language="ja" />
+                        </div>
+                        <span class="label_description">※入力フォームをクリックしますと日付選択が表示されます</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>メールアドレス</span>
+                      </th>
+                      <td>
+                        <span class="label_item">sys.test.adm1n@gmail.com</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>パスワード</span>
+                      </th>
+                      <td>
+                        <span class="label_item">12345678</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>部署1</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">男性</span>
+                            <input type="text"  class="form-control" name="name_kana_first" placeholder="カナを入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">女性</span>
+                            <input type="text"  class="form-control" name="name_kana_last" placeholder="カナを入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>部署2</span>
+                        <span class="any">任意</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">男性</span>
+                            <input type="text"  class="form-control" name="name_kana_first" placeholder="カナを入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">女性</span>
+                            <input type="text"  class="form-control" name="name_kana_last" placeholder="カナを入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>部署3</span>
+                        <span class="any">任意</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">男性</span>
+                            <input type="text"  class="form-control" name="name_kana_first" placeholder="カナを入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">女性</span>
+                            <input type="text"  class="form-control" name="name_kana_last" placeholder="カナを入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span>勤務地</span>
+                        <span class="required">必須</span>
+                      </th>
+                      <td>
+                        <div class="form-inline">
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">男性</span>
+                            <input type="text"  class="form-control" name="name_kana_first" placeholder="カナを入力してください。"/>
+                          </div>
+                          <div class="input-group form-group">
+                            <span class="input-group-addon">女性</span>
+                            <input type="text"  class="form-control" name="name_kana_last" placeholder="カナを入力してください。"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div align="center">
+              <button type="submit" class="btn btn-primary" name="confirm">
+                <i class="glyphicon glyphicon glyphicon-circle-arrow-right"></i>&nbsp;確認ページへ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ページフッター -->
+    <div class="footer">copy left everything free.</div>
+  </body>
+</html>

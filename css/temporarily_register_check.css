@@ -1,0 +1,80 @@
+/**********************
+* Filename:temporarilly_register_check.css
+* Create Date:2016/12/31
+* Author:Aqours-you
+**********************/
+
+/* コンテンツ全体 */
+body {
+	background-color: #fff;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body, input, button {
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	font-size: 13px;
+	color: #3d464d;
+	font-weight: normal;
+}
+
+div.outer_frame {
+	width: 990px;
+	margin: 0 auto;
+}
+
+div#page_content {
+	padding-bottom: 2em;
+	min-height: 425px;
+}
+
+
+div#check_comp_content {
+	text-align: center;
+}
+
+div#check_comp_form {
+	margin: auto;
+	width: 500px;
+}
+
+div.check_comp_container_wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.check_comp_form_container {
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+
+.check_comp_header {
+	font-size: 26px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding:20px 20px 20px 20px;
+	color:#6bbf3f;
+}
+
+.check_comp_description {
+	margin: 10px 0px;
+	padding:0px 20px 20px 20px;
+}
+
+.check_comp_caution {
+	border-style:solid;
+	border-width:1px;
+	padding:10px 10px 10px 10px;
+	margin-left:20px;
+}
+
+img.top_logo {
+	margin-right: 90px;
+	margin-top: 80px;
+	margin-bottom: 110px;
+	display: inline-block;
+	vertical-align: middle;
+}

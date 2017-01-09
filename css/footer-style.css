@@ -1,0 +1,16 @@
+/**********************
+* Filename:footer-style.css
+* Create Date:2016/12/31
+* Author:Aqours-you
+**********************/
+
+.footer {
+    background-color: #aaa;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color : #fff;
+    margin-top:30px;
+    margin:auto;
+    width: 990px;
+}

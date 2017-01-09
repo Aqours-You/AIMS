@@ -1,0 +1,78 @@
+/**********************
+* Filename:temporarilly_register_form.css
+* Create Date:2016/12/31
+* Author:Aqours-you
+**********************/
+
+/* コンテンツ全体 */
+body {
+	background-color: #fff;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body, input, button {
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+	font-size: 13px;
+	color: #3d464d;
+	font-weight: normal;
+}
+
+div.outer_frame {
+	width: 990px;
+	margin: 0 auto;
+}
+
+div#page_content {
+	padding-bottom: 2em;
+	min-height: 425px;
+}
+
+div#register_page_content {
+	text-align: center;
+}
+
+img.top_logo {
+	margin-right: 90px;
+	margin-top: 80px;
+	margin-bottom: 110px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.register_container_wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.register_form_container {
+	width: 100%;
+	position: relative;
+	text-align: left;
+}
+
+div.register_form {
+	width: 350px;
+}
+
+.clearfix {
+	display:block;
+}
+
+.login_register_header {
+	float:left;
+	font-size:24px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.login_register_switch {
+	float:right;
+	margin-top:10px;
+	line-height:normal;
+}
+
+.form-group {
+	margin-top:10px;
+}
